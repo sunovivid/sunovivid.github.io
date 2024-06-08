@@ -17,7 +17,7 @@ profile:
 
 I am an undergraduate researcher at [CVLAB](https://cvlab.korea.ac.kr/home), Korea University, with a deep interest in artificial intelligence, computer vision, generative models, and diffusion models. I am particularly fascinated by the fundamental principles of how the world works and integrating the inductive biases derived from them into generative models. Additionally, I have a keen interest in generating images, videos, and 3D models for artistic or practical purposes. I enjoy creating beautiful artwork using generative models. Recently, I co-authored the [Perturbed-Attention Guidance (PAG)](https://ku-cvlab.github.io/Perturbed-Attention-Guidance/), which is increasingly used in diffusion models. If you are interested, please check out my publications below.
 
-My hobbies include drawing, listening to music, playing the piano, cycling, and exploring new places. If you have any questions about me, feel free to reach out via email (suno.vivid@gmail.com), [LinkedIn](www.linkedin.com/in/donghoon-ahn-622290246), or direct message on [Twitter](https://x.com/donghoon_ahn). I welcome your messages.
+My hobbies include drawing, listening to music, playing the piano, cycling, and exploring new places. If you have any questions about me, feel free to reach out via email (suno.vivid@gmail.com), [LinkedIn](https://www.linkedin.com/in/donghoon-ahn-622290246), or direct message on [Twitter](https://x.com/donghoon_ahn). I welcome your messages.
 
 
 <!--
