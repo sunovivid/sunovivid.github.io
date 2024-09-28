@@ -21,8 +21,8 @@ My hobbies include drawing, listening to music, playing the piano, cycling, and 
 
 I’m currently exploring labs for PhD opportunities starting in Fall 2025. I’m also looking for internship positions this winter or next spring in the area of image, video, or 3D generation research. If you’re interested in my work or think we could be a good fit, I’d be happy to meet and chat, either online or in person.
 
-**If you are interested, feel free to read my [CV](https://drive.google.com/file/d/1UaZ5_w8uNARPfWyiadtoYuaPDxooPYte/view?usp=sharing).
-**
+**If you are interested, feel free to read my [CV](https://drive.google.com/file/d/1UaZ5_w8uNARPfWyiadtoYuaPDxooPYte/view?usp=sharing).**
+
 <!--
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
