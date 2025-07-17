@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Undergraduate researcher in <a href='https://cvlab.korea.ac.kr/home'>CVLAB</a>, Korea University
+subtitle: Incoming Ph.D student at the [Berkeley Artificial Intelligence Research (BAIR) Lab](https://bair.berkeley.edu/about) at UC Berkeley.
 
 profile:
   align: right
