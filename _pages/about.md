@@ -15,13 +15,13 @@ social: true  # includes social icons at the bottom of the page
 more_info:  
 
 ---
-I am an undergraduate researcher at [CVLAB](https://cvlab.kaist.ac.kr/), KAIST, with a deep interest in artificial intelligence, computer vision, generative models, and diffusion models. I am particularly fascinated by the fundamental principles of how the world works and integrating the inductive biases derived from them into generative models. Additionally, I have a keen interest in generating images, videos, and 3D models for artistic or practical purposes. I enjoy creating beautiful artwork using generative models. Recently, I co-authored the [Perturbed-Attention Guidance (PAG)](https://ku-cvlab.github.io/Perturbed-Attention-Guidance/), which is increasingly used in diffusion models. If you are interested, please check out my publications below.
+I am an incoming Ph.D. student in Electrical Engineering and Computer Science at the University of California, Berkeley, advised by [Professor Alexei Efros](https://people.eecs.berkeley.edu/~efros/). I'm interested in artificial intelligence, computer vision, generative models, and diffusion models. I am particularly fascinated by the fundamental principles of how the world works and how to integrate the inductive biases derived from them into generative models. Additionally, I have a keen interest in generating images, videos, and 3D models for artistic or practical purposes.
 
-My hobbies include drawing, listening to music, playing the piano, cycling, and exploring new places. If you have any questions about me, feel free to reach out via email (suno.vivid@gmail.com), [LinkedIn](https://www.linkedin.com/in/donghoon-ahn-622290246), or direct message on [Twitter](https://x.com/donghoon_ahn). I welcome your messages.
+Before starting my Ph.D. program at UC Berkeley, I was a research intern at [CVLAB](https://cvlab.kaist.ac.kr/) at KAIST. I co-authored the [Perturbed-Attention Guidance (PAG)](https://ku-cvlab.github.io/Perturbed-Attention-Guidance/), which is increasingly used in diffusion models. If you are interested, please check out my publications below.
 
-I’m currently exploring labs for PhD opportunities starting in Fall 2025. I’m also looking for internship positions this winter or next spring in the area of image, video, or 3D generation research. If you’re interested in my work or think we could be a good fit, I’d be happy to meet and chat, either online or in person.
+In my free time, I enjoy drawing, listening to music, playing the piano, cycling, and exploring new places. If you have any questions or would like to connect, feel free to reach out via email (suno.vivid@gmail.com), [LinkedIn](https://www.linkedin.com/in/donghoon-ahn-622290246), or send me a direct message on [X](https://x.com/donghoon_ahn). I welcome your messages.
 
-**If you are interested, feel free to read my [CV](https://drive.google.com/file/d/1kWs760URk64kKvp_c-t2RnTLk1a2FUoU/view?usp=sharing).**
+**If you're interested, feel free to check out my [CV](https://drive.google.com/file/d/1kWs760URk64kKvp_c-t2RnTLk1a2FUoU/view?usp=sharing).**
 
 <!--
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
