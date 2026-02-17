@@ -15,13 +15,13 @@ social: true  # includes social icons at the bottom of the page
 more_info:  
 
 ---
-I am an incoming Ph.D. student in Electrical Engineering and Computer Science at the University of California, Berkeley, advised by [Professor Alexei Efros](https://people.eecs.berkeley.edu/~efros/). I'm interested in artificial intelligence, computer vision, generative models, and diffusion models. I am particularly fascinated by the fundamental principles of how the world works and how to integrate the inductive biases derived from them into generative models. Additionally, I have a keen interest in generating images, videos, and 3D models for artistic or practical purposes.
+I am a first-year Ph.D. student in Electrical Engineering and Computer Science at the University of California, Berkeley, advised by Professor [Professor Alexei Efros](https://people.eecs.berkeley.edu/~efros/). My research interests include artificial intelligence, computer vision, generative models, and diffusion models. I am particularly fascinated by the fundamental principles underlying how the world works and by incorporating inductive biases derived from these principles into generative models. I am also interested in generating images, videos, and 3D models for both artistic and practical purposes.
 
-Before starting my Ph.D. program at UC Berkeley, I was a research intern at [CVLAB](https://cvlab.kaist.ac.kr/) at KAIST. I co-authored the [Perturbed-Attention Guidance (PAG)](https://ku-cvlab.github.io/Perturbed-Attention-Guidance/), which is increasingly used in diffusion models. If you are interested, please check out my publications below.
+Before starting my Ph.D. at UC Berkeley, I was a research intern at [CVLAB](https://cvlab.kaist.ac.kr/) at KAIST, where I co-authored [Perturbed-Attention Guidance (PAG)](https://ku-cvlab.github.io/Perturbed-Attention-Guidance/), one of the earliest works on improving the sample quality of diffusion models by guiding them away from perturbed models. If you are interested, please see my publications below.
 
-In my free time, I enjoy drawing, listening to music, playing the piano, cycling, and exploring new places. If you have any questions or would like to connect, feel free to reach out via email (suno.vivid@gmail.com), [LinkedIn](https://www.linkedin.com/in/donghoon-ahn-622290246), or send me a direct message on [X](https://x.com/donghoon_ahn). I welcome your messages.
+In my free time, I enjoy drawing, listening to music, playing the piano, cycling, and exploring new places. If you have any questions or would like to connect or collaborate, feel free to reach out via email (suno.vivid@gmail.com), [LinkedIn](https://www.linkedin.com/in/donghoon-ahn-622290246), or send me a direct message on [X](https://x.com/donghoon_ahn). I welcome your messages.
 
-**If you're interested, feel free to check out my [CV](https://drive.google.com/file/d/1kWs760URk64kKvp_c-t2RnTLk1a2FUoU/view?usp=sharing).**
+**If you're interested, feel free to check out my [CV](https://drive.google.com/file/d/1WPH5f6aNQNZjIRap6OCU07vxeesD1MnC/view?usp=sharing) or [Google Scholar profile](https://scholar.google.com/citations?user=b_m86AoAAAAJ).**
 
 <!--
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
