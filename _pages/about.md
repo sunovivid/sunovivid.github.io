@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Incoming Ph.D student at the [Berkeley Artificial Intelligence Research (BAIR) Lab](https://bair.berkeley.edu/about) at UC Berkeley.
+subtitle: ""
 
 profile:
   align: right
