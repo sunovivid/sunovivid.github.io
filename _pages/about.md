@@ -15,7 +15,7 @@ social: true  # includes social icons at the bottom of the page
 more_info:  
 
 ---
-I am a first-year Ph.D. student in Electrical Engineering and Computer Science at the University of California, Berkeley, advised by Professor [Professor Alexei Efros](https://people.eecs.berkeley.edu/~efros/). My research interests include artificial intelligence, computer vision, generative models, and diffusion models. I am particularly fascinated by the fundamental principles underlying how the world works and by incorporating inductive biases derived from these principles into generative models. I am also interested in generating images, videos, and 3D models for both artistic and practical purposes.
+I am a first-year Ph.D. student in Electrical Engineering and Computer Science at the University of California, Berkeley, advised by [Professor Alexei Efros](https://people.eecs.berkeley.edu/~efros/). My research interests include artificial intelligence, computer vision, generative models, and diffusion models. I am particularly fascinated by the fundamental principles underlying how the world works and by incorporating inductive biases derived from these principles into generative models. I am also interested in generating images, videos, and 3D models for both artistic and practical purposes.
 
 Before starting my Ph.D. at UC Berkeley, I was a research intern at [CVLAB](https://cvlab.kaist.ac.kr/) at KAIST, where I co-authored [Perturbed-Attention Guidance (PAG)](https://ku-cvlab.github.io/Perturbed-Attention-Guidance/), one of the earliest works on improving the sample quality of diffusion models by guiding them away from perturbed models. If you are interested, please see my publications below.
 
