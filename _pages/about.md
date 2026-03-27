@@ -21,7 +21,7 @@ Before starting my Ph.D. at UC Berkeley, I was a research intern at [CVLAB](http
 
 In my free time, I enjoy drawing, listening to music, playing the piano, cycling, and exploring new places. If you have any questions or would like to connect or collaborate, feel free to reach out via email (suno.vivid@gmail.com), [LinkedIn](https://www.linkedin.com/in/donghoon-ahn-622290246), or send me a direct message on [X](https://x.com/donghoon_ahn). I welcome your messages.
 
-**If you're interested, feel free to check out my [CV](https://drive.google.com/file/d/1WPH5f6aNQNZjIRap6OCU07vxeesD1MnC/view?usp=sharing) or [Google Scholar profile](https://scholar.google.com/citations?user=b_m86AoAAAAJ).**
+**If you're interested, feel free to check out my [CV](https://drive.google.com/file/d/1WPH5f6aNQNZjIRap6OCU07vxeesD1MnC/view?usp=drive_link) or [Google Scholar profile](https://scholar.google.com/citations?user=b_m86AoAAAAJ).**
 
 <!--
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
