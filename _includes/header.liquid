@@ -115,7 +115,7 @@
               </button>
             </li>
           {% endif %}
-          {% if site.enable_darkmode %}
+          {% if site.enable_darkmode and page.theme != 'light' %}
             <!-- Toogle theme mode -->
             <li class="toggle-container">
               <button id="light-toggle" title="Change theme">

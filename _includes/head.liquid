@@ -80,7 +80,12 @@
 
 <!-- Dark Mode -->
 <script src="{{ '/assets/js/theme.js' | relative_url | bust_file_cache }}"></script>
-{% if site.enable_darkmode %}
+{% if page.theme == 'light' %}
+  <script>
+    document.documentElement.setAttribute('data-theme', 'light');
+    document.documentElement.setAttribute('data-theme-setting', 'light');
+  </script>
+{% elsif site.enable_darkmode %}
   <link
     defer
     rel="stylesheet"
@@ -91,6 +96,10 @@
   <script>
     initTheme();
   </script>
+{% endif %}
+
+{% if page.math == 'katex' %}
+  <link rel="stylesheet" href="{{ '/demos/flow-matching/assets/katex/katex.min.css' | relative_url }}">
 {% endif %}
 
 <!-- GeoJSON support via Leaflet -->

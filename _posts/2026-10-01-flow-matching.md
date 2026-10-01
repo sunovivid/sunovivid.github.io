@@ -9,16 +9,21 @@ blog: true
 tags: flow-matching diffusion visualization
 categories: generative-models
 related_posts: false
+math: katex
+theme: light
 _styles: |
   .flow-demo-wide { width: min(1800px, calc(100vw - 40px)); position: relative; left: 50%; transform: translateX(-50%); margin: 24px 0; }
   .flow-demo-wide iframe { display: block; width: 100%; height: 900px; border: 1px solid var(--global-divider-color); border-radius: 12px; background: white; }
   .flow-demo-link { font-size: .9rem; }
+  .post .katex-display { overflow-x: auto; overflow-y: hidden; padding: 4px 0; }
   @media (max-width: 600px) { .flow-demo-wide { width: calc(100vw - 24px); } }
 ---
 
 A flow-matching model predicts an average direction during training, yet its sampling trajectory can end at a sharp, individual image. We can see the distinction by showing **the current input**, **the one-step prediction**, and **the final sample** together.
 
 Drag the orange point, move the time slider, or press **Play**. The colored strip on the left changes the initial noise. The image panel on the right shows the clean images contributing to the current prediction: many small images initially, then a smaller set of larger images, and finally one image.
+
+Use **Image size** to resize the current input, prediction, and final sample together.
 
 <div class="flow-demo-wide">
   <iframe id="flow-matching-demo" src="{{ '/demos/flow-matching/?embed=1' | relative_url }}" title="Interactive flow matching: conditional average and final sample" loading="eager"></iframe>
