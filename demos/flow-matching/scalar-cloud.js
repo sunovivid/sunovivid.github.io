@@ -1,6 +1,6 @@
 'use strict';
 const embedded=new URLSearchParams(location.search).has('embed');if(embedded)document.documentElement.classList.add('embedded');
-const $=id=>document.getElementById(id),F=FlowMath;const W=2000,H=895,L=230,R=1240,T=85,B=775,CLOUD_WIDTH=540,CLOUD_HEIGHT=B-T,CLOUD_X=W-CLOUD_WIDTH-25,Y=z=>B-(z+4.5)/9*(B-T);let D,q=.58,t=.15,axis='linear',path,background,pool,svg,timer=null,worker,inFlight=false,pending=null,serial=0,ready=false,images={};const toggles={},timings=[];let atlas,cloudCanvas,cloudContext,cloudWidth,cloudHeight,previewWidth=220,cloudLastFrame,finalCloudImage=null,finalCloudId=-1;
+const $=id=>document.getElementById(id),F=FlowMath;const W=2000,H=895,L=300,R=1240,T=85,B=775,CLOUD_WIDTH=540,CLOUD_HEIGHT=B-T,CLOUD_X=W-CLOUD_WIDTH-25,Y=z=>B-(z+4.5)/9*(B-T);let D,q=.58,t=.15,axis='linear',path,background,pool,svg,timer=null,worker,inFlight=false,pending=null,serial=0,ready=false,images={};const toggles={},timings=[];let atlas,cloudCanvas,cloudContext,cloudWidth,cloudHeight,previewWidth=220,cloudLastFrame,finalCloudImage=null,finalCloudId=-1;
 const zoom=s=>(1-Math.exp(-3*s))/(1-Math.exp(-3)),unzoom=s=>-Math.log(1-s*(1-Math.exp(-3)))/3,X=s=>L+(R-L)*(axis==='focus'?zoom(s):s),timeAt=x=>axis==='focus'?unzoom(Math.max(0,Math.min(1,(x-L)/(R-L)))):Math.max(0,Math.min(1,(x-L)/(R-L)));
 function set(id,attrs){for(const[k,v]of Object.entries(attrs))$(id).setAttribute(k,v)}function stop(){clearTimeout(timer);timer=null;$('play').textContent='Play'}
 function random(seed){return ()=>{seed|=0;seed=seed+0x6D2B79F5|0;let v=Math.imul(seed^seed>>>15,1|seed);v^=v+Math.imul(v^v>>>7,61|v);return ((v^v>>>14)>>>0)/4294967296}}
@@ -14,23 +14,27 @@ function graphInit(){svg=$('plot').innerHTML=`<svg xmlns="http://www.w3.org/2000
 function redrawStatic(){let s=`<rect x="${L}" y="${T}" width="${R-L}" height="${B-T}" fill="#f9fbfc"/>`;for(const time of [0,.1,.2,.3,.4,.6,.8,1])s+=`<path d="M${X(time)},${T}V${B}" stroke="#e0e9ed"/><text x="${X(time)}" y="${B+29}" text-anchor="middle" font-size="19" fill="#698392">${time.toFixed(1)}</text>`;for(let z=-4;z<=4;z++)s+=`<path d="M${L},${Y(z)}H${R}" stroke="#edf1f3"/><text x="${L-15}" y="${Y(z)+6}" text-anchor="end" font-size="18" fill="#8299a3">${z}</text>`;$('grid').innerHTML=s;$('paths').innerHTML=background.map(p=>`<path d="${trajectory(p)}" fill="none" stroke="#bdd0d8" stroke-width="1.1" opacity=".55"/>`).join('');set('noise-density',{d:densityPath(Array.from({length:451},(_,i)=>{const z=-4.5+9*i/450;return [z,F.normal(z,0,1)]}),L,-1,145)});$('endpoints').innerHTML=D.photos.map(p=>`<circle class="endpoint" data-index="${p.index}" cx="${R}" cy="${Y(p.coordinate)}" r="1.6" fill="${D.classes[p.class_index].color}" opacity=".35"><title>Clean photograph</title></circle>`).join('');$('axis-note').textContent=axis==='focus'?`Early-time zoom: t = 0–0.4 occupies ${(zoom(.4)*100).toFixed(0)}% of the horizontal field. The labels show actual time.`:'Linear time axis: straight training pairs and frozen-velocity extrapolation. The image cloud uses the same probabilities in either view.'}
 function card(id,x,y,label,url,color,anchorX,anchorY,size=90,caption=''){return {id,x,y:Math.max(T+28,Math.min(B-size-8,y)),label,url,color,anchorX,anchorY,size,caption}}
 function pointPhotos(frame){
- const {z,m,final,eps,winner}=frame,scale=+$('image-size').value/100,size=82*scale,inputSize=74*scale,gap=size+80;
- let predictionY=Math.max(T+28,Math.min(B-size-8,Y(m)-size-16));
- let finalY=Math.max(T+28,Math.min(B-size-8,Y(final)-size-16));
- if(Math.abs(predictionY-finalY)<gap){
-  const center=(Y(m)+Y(final))/2,top=Math.max(T+28,Math.min(B-size-8-gap,center-size-18));
-  if(Y(m)<=Y(final)){predictionY=top;finalY=top+gap}else{finalY=top;predictionY=top+gap}
+ const {z,m,final,eps,winner}=frame,size=82*+$('image-size').value/100;
+ const clampY=y=>Math.max(T+28,Math.min(B-size-8,y));
+ const finalX=R-size-32,predictionX=finalX-size-20,rowY=clampY((Y(m)+Y(final))/2-size-16);
+ let stateX=Math.min(finalX,X(t)+16),stateY=clampY(Y(z)+16);
+ // Keep the current image beside its point, avoiding the compact endpoint row.
+ if(stateX+size+8>predictionX && stateY+size+8>rowY-26 && stateY-26<rowY+size+8){
+  const below=rowY+size+42,above=rowY-size-42;
+  if(below<=B-size-8)stateY=below;
+  else if(above>=T+28)stateY=above;
+  else stateX=predictionX-size-20;
  }
  const cards=[
-  card('noise-photo',90,Y(eps)-32,'\\epsilon',images.noise,'#587995',L,Y(eps),74),
-  card('state-photo',Math.min(R-size-32-inputSize-24,X(t)+16),Y(z)+16,'x_t',images.state,'#db8651',X(t),Y(z),inputSize),
-  card('prediction-photo',R-size-32,predictionY,'\\hat{x}_1',images.prediction,'#d92d27',R,Y(m),size),
-  card('final-photo',R-size-32,finalY,'x_1',D.photos[winner].file,'#2a766d',R,Y(final),size)
+  card('noise-photo',L-size-32,Y(eps)-size/2,'\\epsilon',images.noise,'#587995',L,Y(eps),size),
+  card('state-photo',stateX,stateY,'x_t',images.state,'#db8651',X(t),Y(z),size),
+  card('prediction-photo',predictionX,rowY,'\\hat{x}_1',images.prediction,'#d92d27',R,Y(m),size),
+  card('final-photo',finalX,rowY,'x_1',D.photos[winner].file,'#2a766d',R,Y(final),size)
  ];
  for(const c of cards){
-  const role={'prediction-photo':'Prediction','final-photo':'Final sample'}[c.id]||'',header=role?44:26;
+  const role={'prediction-photo':'Prediction','final-photo':'Final sample'}[c.id]||'',header=26;
   if(!$(c.id)){
-   $('images').insertAdjacentHTML('beforeend',`<g class="floating-photo" id="${c.id}"><title></title><rect rx="4" fill="white" fill-opacity=".97" stroke="${c.color}"/><foreignObject class="math-label"><div xmlns="http://www.w3.org/1999/xhtml" style="text-align:center;font-size:18px;line-height:24px"><div class="role" style="font:12px/16px system-ui"></div><span class="formula"></span></div></foreignObject><image id="${c.id}-img"/></g>`);
+   $('images').insertAdjacentHTML('beforeend',`<g class="floating-photo" id="${c.id}"><title></title><rect rx="4" fill="white" fill-opacity=".97" stroke="${c.color}"/><foreignObject class="math-label"><div xmlns="http://www.w3.org/1999/xhtml" style="display:flex;align-items:center;justify-content:center;gap:4px;white-space:nowrap;height:24px"><span class="role" style="font-family:system-ui"></span><span class="formula"></span></div></foreignObject><image id="${c.id}-img"/></g>`);
    $('image-links').insertAdjacentHTML('beforeend',`<path id="${c.id}-link" fill="none" stroke="${c.color}" stroke-opacity=".55" stroke-width="1.3" stroke-dasharray="4 4"/>`);
    katex.render(c.label,$(c.id).querySelector('.math-label .formula'),{throwOnError:true});$(c.id).querySelector('.role').textContent=role;if(!role)$(c.id).querySelector('.role').style.display='none';
    $(c.id).querySelector('title').textContent={'noise-photo':'Initial noise ε','state-photo':'Current input xₜ','prediction-photo':'One-step clean prediction','final-photo':'Final image along the flow'}[c.id];
@@ -39,6 +43,9 @@ function pointPhotos(frame){
   for(const[k,v]of Object.entries({x:c.x-4,y:c.y-header,width:c.size+8,height:c.size+header+4}))rect.setAttribute(k,v);
   for(const[k,v]of Object.entries({x:c.x,y:c.y-header+1,width:c.size,height:header-1}))label.setAttribute(k,v);
   label.style.color=c.color;
+  const fontSize=Math.min(18,c.size*.18);
+  label.querySelector('div').style.fontSize=fontSize+'px';
+  label.querySelector('.role').style.fontSize=fontSize*2/3+'px';
   for(const[k,v]of Object.entries({x:c.x,y:c.y,width:c.size,height:c.size}))im.setAttribute(k,v);
   if(c.url&&im.getAttribute('href')!==c.url)im.setAttribute('href',c.url);
   set(c.id+'-link',{d:`M${c.anchorX},${c.anchorY}L${c.x+c.size/2},${c.y+c.size/2}`});
