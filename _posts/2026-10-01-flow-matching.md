@@ -23,7 +23,7 @@ A flow-matching model predicts an average direction during training, yet its sam
 
 Drag the orange point, move the time slider, or press **Play**. The colored strip on the left changes the initial noise. The image panel on the right shows the clean images contributing to the current prediction: many small images initially, then a smaller set of larger images, and finally one image.
 
-Use **Image size** to resize the current input, prediction, and final sample together.
+Use **Image size** to resize the noise, current input, prediction, and final sample together. All four images use the same size.
 
 <div class="flow-demo-wide">
   <iframe id="flow-matching-demo" src="{{ '/demos/flow-matching/?embed=1' | relative_url }}" title="Interactive flow matching: conditional average and final sample" loading="eager"></iframe>
