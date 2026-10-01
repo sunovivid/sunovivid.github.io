@@ -21,7 +21,7 @@ _styles: |
 
 A flow-matching model predicts an average direction during training, yet its sampling trajectory can end at a sharp, individual image. We can see the distinction by showing **the current input**, **the one-step prediction**, and **the final sample** together.
 
-Drag the orange point, move the time slider, or press **Play**. The colored strip on the left changes the initial noise. The image panel on the right shows the clean images contributing to the current prediction: many small images initially, then a smaller set of larger images, and finally one image.
+The demo starts playing automatically, with **Loop** enabled. It briefly holds the final image before repeating the same trajectory from noise. Press **Pause** to inspect a moment, or turn off **Loop** to stop at the final sample. You can also drag the orange point or move the time slider. The colored strip on the left changes the initial noise. The image panel on the right shows the clean images contributing to the current prediction: many small images initially, then a smaller set of larger images, and finally one image.
 
 Use **Image size** to resize the noise, current input, prediction, and final sample together. All four images use the same size.
 
