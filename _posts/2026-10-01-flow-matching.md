@@ -28,7 +28,7 @@ Drag the orange point, move the time slider, or press **Play**. The colored stri
 (() => {
   const frame = document.getElementById('flow-matching-demo');
   addEventListener('message', event => {
-    if (event.origin !== location.origin || event.source !== frame.contentWindow || event.data?.kind !== 'flow-demo-resize') return;
+    if (event.origin !== location.origin || event.source !== frame.contentWindow || !event.data || event.data.kind !== 'flow-demo-resize') return;
     const height = Number(event.data.height);
     if (Number.isFinite(height) && height > 100 && height < 10000) frame.style.height = Math.ceil(height + 4) + 'px';
   });
