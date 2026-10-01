@@ -1,4 +1,8 @@
-{% if site.enable_math %}
+{% if page.math == 'katex' %}
+  <script defer src="{{ '/demos/flow-matching/assets/katex/katex.min.js' | relative_url }}"></script>
+  <script defer src="{{ '/demos/flow-matching/assets/katex/auto-render.min.js' | relative_url }}"></script>
+  <script defer src="{{ '/demos/flow-matching/post-math.js' | relative_url }}"></script>
+{% elsif site.enable_math %}
   {% unless page.pseudocode %}
     <!-- MathJax -->
     <script type="text/javascript">

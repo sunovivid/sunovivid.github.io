@@ -565,7 +565,7 @@
         {%- endif -%}
         {%- endcomment -%}
       {%- endif -%}
-      {%- if site.enable_darkmode -%}
+      {%- if site.enable_darkmode and page.theme != 'light' -%}
         {
           id: 'light-theme',
           title: 'Change theme to light',
