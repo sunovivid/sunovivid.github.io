@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "standalone_assets": true,
+  "gray_straight_bridge": true,
+  "bridge_starts_at_density_contour": true,
+  "image_panels_outside_points": true,
+  "embed_auto_height": true,
+  "iframe_height": 1062,
+  "no_missing_assets": true,
+  "mobile": true,
+  "errors": []
+}

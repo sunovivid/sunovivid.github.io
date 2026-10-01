@@ -1,0 +1,651 @@
+{
+  "numerical": {
+    "passed": true,
+    "prior_probability": 0.002,
+    "photo_prior_max_error": 1.1201976846120232e-13,
+    "equal_class_prior": 0.25,
+    "quadrature_max_pixel_error": 1.184181594447498e-11,
+    "quadrature": [
+      {
+        "q": 0.08,
+        "t": 0.15,
+        "nodes": 16,
+        "max_pixel_error_vs_256": 1.308848862624501e-14,
+        "max_coefficient_error": 1.2956215961201778e-17
+      },
+      {
+        "q": 0.08,
+        "t": 0.4,
+        "nodes": 16,
+        "max_pixel_error_vs_256": 1.0901490214015874e-13,
+        "max_coefficient_error": 3.361026734705064e-17
+      },
+      {
+        "q": 0.08,
+        "t": 0.7,
+        "nodes": 32,
+        "max_pixel_error_vs_256": 3.073683885537748e-13,
+        "max_coefficient_error": 4.90059381963448e-17
+      },
+      {
+        "q": 0.08,
+        "t": 0.9,
+        "nodes": 64,
+        "max_pixel_error_vs_256": 1.5793568845312925e-12,
+        "max_coefficient_error": 3.7816971776294395e-16
+      },
+      {
+        "q": 0.08,
+        "t": 0.99,
+        "nodes": 64,
+        "max_pixel_error_vs_256": 7.350453434716656e-12,
+        "max_coefficient_error": 1.2906342661267445e-14
+      },
+      {
+        "q": 0.08,
+        "t": 0.999,
+        "nodes": 64,
+        "max_pixel_error_vs_256": 1.068083894546655e-11,
+        "max_coefficient_error": 2.120525977034049e-14
+      },
+      {
+        "q": 0.33,
+        "t": 0.15,
+        "nodes": 16,
+        "max_pixel_error_vs_256": 1.2306778859882961e-14,
+        "max_coefficient_error": 1.0950441942103595e-17
+      },
+      {
+        "q": 0.33,
+        "t": 0.4,
+        "nodes": 16,
+        "max_pixel_error_vs_256": 6.945648483441813e-14,
+        "max_coefficient_error": 2.656295322589486e-17
+      },
+      {
+        "q": 0.33,
+        "t": 0.7,
+        "nodes": 32,
+        "max_pixel_error_vs_256": 3.9729255042059153e-13,
+        "max_coefficient_error": 5.984795992119984e-17
+      },
+      {
+        "q": 0.33,
+        "t": 0.9,
+        "nodes": 64,
+        "max_pixel_error_vs_256": 1.597907847976799e-12,
+        "max_coefficient_error": 4.0245584642661925e-16
+      },
+      {
+        "q": 0.33,
+        "t": 0.99,
+        "nodes": 64,
+        "max_pixel_error_vs_256": 5.825683864180392e-12,
+        "max_coefficient_error": 9.825473767932635e-15
+      },
+      {
+        "q": 0.33,
+        "t": 0.999,
+        "nodes": 64,
+        "max_pixel_error_vs_256": 1.030446158383071e-11,
+        "max_coefficient_error": 2.0317081350640365e-14
+      },
+      {
+        "q": 0.58,
+        "t": 0.15,
+        "nodes": 16,
+        "max_pixel_error_vs_256": 1.0456696272753696e-14,
+        "max_coefficient_error": 1.1926223897340549e-17
+      },
+      {
+        "q": 0.58,
+        "t": 0.4,
+        "nodes": 16,
+        "max_pixel_error_vs_256": 8.879778422982154e-14,
+        "max_coefficient_error": 3.0357660829594124e-17
+      },
+      {
+        "q": 0.58,
+        "t": 0.7,
+        "nodes": 32,
+        "max_pixel_error_vs_256": 5.222737119083692e-13,
+        "max_coefficient_error": 5.898059818321144e-17
+      },
+      {
+        "q": 0.58,
+        "t": 0.9,
+        "nodes": 64,
+        "max_pixel_error_vs_256": 1.4181343951794392e-12,
+        "max_coefficient_error": 4.0245584642661925e-16
+      },
+      {
+        "q": 0.58,
+        "t": 0.99,
+        "nodes": 64,
+        "max_pixel_error_vs_256": 5.376280349290465e-12,
+        "max_coefficient_error": 9.742207041085749e-15
+      },
+      {
+        "q": 0.58,
+        "t": 0.999,
+        "nodes": 64,
+        "max_pixel_error_vs_256": 1.0465295037620273e-11,
+        "max_coefficient_error": 2.0261570199409107e-14
+      },
+      {
+        "q": 0.83,
+        "t": 0.15,
+        "nodes": 16,
+        "max_pixel_error_vs_256": 1.262808217369904e-14,
+        "max_coefficient_error": 9.324138683375338e-18
+      },
+      {
+        "q": 0.83,
+        "t": 0.4,
+        "nodes": 16,
+        "max_pixel_error_vs_256": 5.168405308765556e-14,
+        "max_coefficient_error": 2.5153490401663703e-17
+      },
+      {
+        "q": 0.83,
+        "t": 0.7,
+        "nodes": 32,
+        "max_pixel_error_vs_256": 2.644316785937323e-13,
+        "max_coefficient_error": 6.071532165918825e-17
+      },
+      {
+        "q": 0.83,
+        "t": 0.9,
+        "nodes": 64,
+        "max_pixel_error_vs_256": 9.7330793462835e-13,
+        "max_coefficient_error": 3.920475055707584e-16
+      },
+      {
+        "q": 0.83,
+        "t": 0.99,
+        "nodes": 64,
+        "max_pixel_error_vs_256": 5.336780277308197e-12,
+        "max_coefficient_error": 9.603429163007604e-15
+      },
+      {
+        "q": 0.83,
+        "t": 0.999,
+        "nodes": 64,
+        "max_pixel_error_vs_256": 1.0195216297463925e-11,
+        "max_coefficient_error": 3.2307490016592055e-14
+      },
+      {
+        "q": 0.35001,
+        "t": 0.15,
+        "nodes": 16,
+        "max_pixel_error_vs_256": 1.035125761147948e-14,
+        "max_coefficient_error": 1.0245710529988017e-17
+      },
+      {
+        "q": 0.35001,
+        "t": 0.4,
+        "nodes": 16,
+        "max_pixel_error_vs_256": 7.098342096403809e-14,
+        "max_coefficient_error": 3.71881345162528e-17
+      },
+      {
+        "q": 0.35001,
+        "t": 0.7,
+        "nodes": 32,
+        "max_pixel_error_vs_256": 4.043537152245008e-13,
+        "max_coefficient_error": 5.551115123125783e-17
+      },
+      {
+        "q": 0.35001,
+        "t": 0.9,
+        "nodes": 64,
+        "max_pixel_error_vs_256": 1.4991077566047124e-12,
+        "max_coefficient_error": 3.7816971776294395e-16
+      },
+      {
+        "q": 0.35001,
+        "t": 0.99,
+        "nodes": 64,
+        "max_pixel_error_vs_256": 5.355944712836082e-12,
+        "max_coefficient_error": 9.159339953157541e-15
+      },
+      {
+        "q": 0.35001,
+        "t": 0.999,
+        "nodes": 64,
+        "max_pixel_error_vs_256": 1.0386153538574038e-11,
+        "max_coefficient_error": 2.942091015256665e-14
+      },
+      {
+        "q": 0.50001,
+        "t": 0.15,
+        "nodes": 16,
+        "max_pixel_error_vs_256": 1.4988878194177602e-14,
+        "max_coefficient_error": 1.1384122811097797e-17
+      },
+      {
+        "q": 0.50001,
+        "t": 0.4,
+        "nodes": 16,
+        "max_pixel_error_vs_256": 8.660503954607823e-14,
+        "max_coefficient_error": 3.0357660829594124e-17
+      },
+      {
+        "q": 0.50001,
+        "t": 0.7,
+        "nodes": 32,
+        "max_pixel_error_vs_256": 3.94670380361381e-13,
+        "max_coefficient_error": 1.1796119636642288e-16
+      },
+      {
+        "q": 0.50001,
+        "t": 0.9,
+        "nodes": 64,
+        "max_pixel_error_vs_256": 1.555596444843474e-12,
+        "max_coefficient_error": 1.9845236565174673e-15
+      },
+      {
+        "q": 0.50001,
+        "t": 0.99,
+        "nodes": 64,
+        "max_pixel_error_vs_256": 4.8394963361912484e-12,
+        "max_coefficient_error": 1.1546319456101628e-14
+      },
+      {
+        "q": 0.50001,
+        "t": 0.999,
+        "nodes": 64,
+        "max_pixel_error_vs_256": 1.184181594447498e-11,
+        "max_coefficient_error": 5.256906021600116e-14
+      },
+      {
+        "q": 0.999,
+        "t": 0.15,
+        "nodes": 16,
+        "max_pixel_error_vs_256": 1.5597291795795e-14,
+        "max_coefficient_error": 8.131516293641283e-18
+      },
+      {
+        "q": 0.999,
+        "t": 0.4,
+        "nodes": 16,
+        "max_pixel_error_vs_256": 2.596575081684205e-12,
+        "max_coefficient_error": 2.0868181314914747e-16
+      },
+      {
+        "q": 0.999,
+        "t": 0.7,
+        "nodes": 32,
+        "max_pixel_error_vs_256": 5.826684485376807e-13,
+        "max_coefficient_error": 4.0245584642661925e-16
+      },
+      {
+        "q": 0.999,
+        "t": 0.9,
+        "nodes": 64,
+        "max_pixel_error_vs_256": 2.1666987899216037e-12,
+        "max_coefficient_error": 8.382183835919932e-15
+      },
+      {
+        "q": 0.999,
+        "t": 0.99,
+        "nodes": 64,
+        "max_pixel_error_vs_256": 5.755462957733823e-12,
+        "max_coefficient_error": 2.2648549702353193e-14
+      },
+      {
+        "q": 0.999,
+        "t": 0.999,
+        "nodes": 64,
+        "max_pixel_error_vs_256": 1.0503182095073145e-11,
+        "max_coefficient_error": 3.885780586188048e-14
+      }
+    ],
+    "metric": "Exact scalar posterior integrated over each fixed clean quantile interval; raw RGB weighted means."
+  },
+  "browser": {
+    "passed": true,
+    "photos": 500,
+    "additional_per_class": 100,
+    "class_total": 125,
+    "all_500_noise_endpoints": true,
+    "equal_prior_probability": 0.002,
+    "classes_on_pointer_click": [
+      "face",
+      "cat",
+      "flower",
+      "car"
+    ],
+    "random_sampling": {
+      "draws": 50000,
+      "min_count": 75,
+      "max_count": 135,
+      "class_counts": [
+        12750,
+        12403,
+        12582,
+        12265
+      ]
+    },
+    "weighted_rgb_max_error": 0.0003436279297659439,
+    "small_rank_shift_max_pixel_change": 0.0015411376953125,
+    "live_dragging": true,
+    "median_main_render_ms": 7.75,
+    "p95_main_render_ms": 75.12000000178813,
+    "worker_simd": true,
+    "early_time_width": 0.7354202040667792,
+    "point_images": true,
+    "equal_final_display_sizes": true,
+    "hover_preview": true,
+    "time_preserves_rank": true,
+    "mobile": true,
+    "trajectory": [
+      {
+        "t": 0,
+        "q": 0.58,
+        "n99": 500,
+        "ess": 499.9999999999944,
+        "image_worker_ms": 32.19999998807907,
+        "weighted_rgb_error": 0.0003436279297659439
+      },
+      {
+        "t": 0.15,
+        "q": 0.58,
+        "n99": 494,
+        "ess": 494.49907877061605,
+        "image_worker_ms": 198.80000001192093,
+        "weighted_rgb_error": 0.0002813480978716143
+      },
+      {
+        "t": 0.3,
+        "q": 0.58,
+        "n99": 481,
+        "ess": 431.19102518665693,
+        "image_worker_ms": 95.30000001192093,
+        "weighted_rgb_error": 0.0002457956554451357
+      },
+      {
+        "t": 0.4,
+        "q": 0.58,
+        "n99": 431,
+        "ess": 324.4637805272483,
+        "image_worker_ms": 110.60000002384186,
+        "weighted_rgb_error": 0.0002459407837420713
+      },
+      {
+        "t": 0.6,
+        "q": 0.58,
+        "n99": 212,
+        "ess": 142.68383151544802,
+        "image_worker_ms": 107.70000004768372,
+        "weighted_rgb_error": 0.00026361738946434343
+      },
+      {
+        "t": 0.8,
+        "q": 0.58,
+        "n99": 94,
+        "ess": 73.74960533745396,
+        "image_worker_ms": 167.10000002384186,
+        "weighted_rgb_error": 0.00014788294132017654
+      },
+      {
+        "t": 0.95,
+        "q": 0.58,
+        "n99": 27,
+        "ess": 18.39801931973854,
+        "image_worker_ms": 208.5,
+        "weighted_rgb_error": 0.00011114556986058233
+      },
+      {
+        "t": 0.99,
+        "q": 0.58,
+        "n99": 6,
+        "ess": 3.703431596565747,
+        "image_worker_ms": 172.89999997615814,
+        "weighted_rgb_error": 5.344824822373084e-05
+      },
+      {
+        "t": 1,
+        "q": 0.58,
+        "n99": 1,
+        "ess": 1,
+        "image_worker_ms": 7,
+        "weighted_rgb_error": 0.0
+      }
+    ],
+    "errors": []
+  },
+  "public": {
+    "passed": true,
+    "public_redirect": true,
+    "all_500_photos": true,
+    "worker_simd": true,
+    "scalar_photo_posterior_max_error": 7.227123899333776e-09,
+    "point_images": true,
+    "equal_final_sizes": true,
+    "url": "https://gets-generations-nam-already.trycloudflare.com/GShzDiYgXDQFJM4HWxV23ZUrF3HstCKP/cats/four-cloud-v2/index.html",
+    "errors": []
+  },
+  "live-preview": {
+    "passed": true,
+    "updates_while_pointer_held": 24,
+    "preview_quantiles": [
+      0.1,
+      0.1,
+      0.128,
+      0.156,
+      0.184,
+      0.212,
+      0.24,
+      0.268,
+      0.296,
+      0.324,
+      0.352,
+      0.38,
+      0.408,
+      0.436,
+      0.464,
+      0.492,
+      0.52,
+      0.548,
+      0.576,
+      0.604,
+      0.632,
+      0.66,
+      0.688,
+      0.716
+    ],
+    "prediction_cloud_weights_identical": true,
+    "latest_preview_catches_pointer": true,
+    "errors": []
+  },
+  "inline-cloud": {
+    "passed": true,
+    "default_axis": "linear",
+    "top_k_replaced_by_inline_cloud": true,
+    "prediction_cloud_weights_identical": true,
+    "timepoints": [
+      {
+        "t": 0,
+        "photos": 500
+      },
+      {
+        "t": 0.4,
+        "photos": 431
+      },
+      {
+        "t": 0.7,
+        "photos": 126
+      },
+      {
+        "t": 0.95,
+        "photos": 27
+      },
+      {
+        "t": 1,
+        "photos": 1
+      }
+    ],
+    "mobile": true,
+    "errors": []
+  },
+  "large-cloud": {
+    "passed": true,
+    "cloud_drawing_size": 400,
+    "legend_icons": 11,
+    "class_cards_removed": true,
+    "statistics_removed": true,
+    "toggles_work": true,
+    "shared_posterior_weights": true,
+    "mobile": true,
+    "timepoints": [
+      {
+        "t": 0,
+        "photos": 500
+      },
+      {
+        "t": 0.65,
+        "photos": 158
+      },
+      {
+        "t": 1,
+        "photos": 1
+      }
+    ],
+    "errors": []
+  },
+  "fixed-cloud": {
+    "passed": true,
+    "fixed_cloud_transform": "translate(1435,85)",
+    "cloud_dimensions": [
+      540,
+      595
+    ],
+    "notation": [
+      "x_t",
+      "xhat_1",
+      "x_1"
+    ],
+    "prediction_final_centered_at_t1": true,
+    "compact_cards": true,
+    "no_overlap": true,
+    "no_class_or_statistics_panels": true,
+    "author_credit": true,
+    "mobile": true,
+    "cases": 20,
+    "errors": []
+  },
+  "rectangular-cloud": {
+    "passed": true,
+    "rectangular_grid": true,
+    "all_grid_sizes_checked": 500,
+    "minimum_photo_area_coverage": 0.9312560386473493,
+    "all_corners_filled": true,
+    "height": 895,
+    "field_height": 690,
+    "density_title": "p(x_1 | x_t,t)",
+    "fixed_cloud": true,
+    "shared_weights": true,
+    "cases": [
+      {
+        "t": 0,
+        "images": 500
+      },
+      {
+        "t": 0.8,
+        "images": 94
+      },
+      {
+        "t": 1,
+        "images": 1
+      }
+    ],
+    "mobile": true,
+    "errors": []
+  },
+  "visible-points": {
+    "passed": true,
+    "markers_above_images": true,
+    "coincident_points_use_concentric_rings": true,
+    "prediction_final_labels": true,
+    "photo_sizes": [
+      74,
+      82
+    ],
+    "notation_font_px": 18,
+    "pair_colors_default": false,
+    "no_overlap": true,
+    "errors": []
+  },
+  "posterior-lens": {
+    "passed": true,
+    "uncolored_pairs": "purple",
+    "pair_colors_default": false,
+    "faint_magnification_bridge": true,
+    "source_support": "central 99% of conditional distribution",
+    "follows_time": true,
+    "posterior_toggle_controls_bridge": true,
+    "marker_layer_above_images": true,
+    "prediction_final_labels": true,
+    "frames": [
+      {
+        "t": 0,
+        "q": 0.58,
+        "top": 129.14566194347572,
+        "bottom": 730.8543380565243,
+        "low": -3.9241870181285776,
+        "high": 3.9241870181285776,
+        "right": 1423
+      },
+      {
+        "t": 0.4,
+        "q": 0.58,
+        "top": 152.77753925203183,
+        "bottom": 671.7998508618135,
+        "low": -3.153911098197568,
+        "high": 3.615945140190888,
+        "right": 1423
+      },
+      {
+        "t": 0.8,
+        "q": 0.58,
+        "top": 324.24074640749797,
+        "bottom": 411.8328492353127,
+        "low": 0.23696283606113866,
+        "high": 1.3794685251195915,
+        "right": 1423
+      },
+      {
+        "t": 0.98,
+        "q": 0.58,
+        "top": 365.42301690807415,
+        "bottom": 373.47522899333853,
+        "low": 0.7372796218260191,
+        "high": 0.8423084751120768,
+        "right": 1423
+      },
+      {
+        "t": 1,
+        "q": 0.58,
+        "top": 366.46561720059447,
+        "bottom": 372.46561720059447,
+        "low": 0.7895789060792032,
+        "high": 0.7895789060792032,
+        "right": 1423
+      }
+    ],
+    "errors": []
+  },
+  "blog": {
+    "passed": true,
+    "standalone_assets": true,
+    "gray_straight_bridge": true,
+    "bridge_starts_at_density_contour": true,
+    "image_panels_outside_points": true,
+    "embed_auto_height": true,
+    "iframe_height": 1062,
+    "no_missing_assets": true,
+    "mobile": true,
+    "errors": []
+  }
+}
